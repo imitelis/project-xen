@@ -1,0 +1,9 @@
+{
+  "person_name": "alien soldier",
+  "person_class": "alien",
+  "person_description": "aliens never die",
+  "person_distance": 10,
+  "person_hp": 5000,
+  "person_techs": ['laser'],
+  "person_teleport": true
+}
