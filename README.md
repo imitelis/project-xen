@@ -8,18 +8,21 @@ Godot project codepen Project Xen
 
 ## Current Tasks
   *  Familiarize with the engine, read docs
-  *  Research structure of Godot projects, good practices
   *  Basic tutorials, research features
-  *  Rough finish main menu scenes
-  *  Since Godot is more compatible with JSON, and JSON is simpler and more widely used (for example in JS) than XML, research its scope
-  *  Rough finish skin selector menu
+  *  Research JSON scope and Sprite loading
+  *  Work on Skin Selector, delete and update skins (only states, not images)
   *  Research multiplayer connection features, native performance, web performance, etc.
 
 ## Current Capabilities
 
   *  Main Menu:
-    *  Quit Button works
-    *  
+    *  Menu Buttons work
+
+  *  Skin Creator:
+    *  You can create a new Skin and save it as JSON file!
+    
+  *  Skin Selector:
+    *  It loads all the Skins saved as Labels with the JSON files data
 
 ## How to test in your pc
 

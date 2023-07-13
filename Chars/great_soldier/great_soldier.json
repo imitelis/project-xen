@@ -1,9 +1,0 @@
-{
-  "person_name": "great soldier",
-  "person_class": "human",
-  "person_description": "greatest soldier that ever lived",
-  "person_distance": 8,
-  "person_hp": 1000,
-  "person_techs": ['gun', 'rifle'],
-  "person_teleport": false
-}

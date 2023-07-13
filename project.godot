@@ -8,21 +8,15 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Node",
-"class": "Person",
-"language": "GDScript",
-"path": "res://Scripts/Person.gd"
-} ]
-_global_script_class_icons={
-"Person": ""
-}
-
 [application]
 
-config/name="Xen War Project"
+config/name="Xen Project"
 run/main_scene="res://Scenes/MainMenu.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Global="*res://Scenes/Global.tscn"
 
 [gui]
 

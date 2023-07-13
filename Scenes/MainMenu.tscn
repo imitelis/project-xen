@@ -1,27 +1,17 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/MenuScripts/QuitButton.gd" type="Script" id=2]
 [ext_resource path="res://Scripts/MenuScripts/PlayButton.gd" type="Script" id=3]
-[ext_resource path="res://Scripts/MenuScripts/SkinButton.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/MenuScripts/SkinCreatorButton.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/MenuScripts/SkinSelectorButton.gd" type="Script" id=5]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends VBoxContainer
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = \"text\"
-
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
 "
 
 [node name="MainMenu" type="Control"]
@@ -48,22 +38,42 @@ text = "Play"
 icon = ExtResource( 1 )
 script = ExtResource( 3 )
 
-[node name="SkinButton" type="Button" parent="VBoxButtons"]
+[node name="SkinCreatorButton" type="Button" parent="VBoxButtons"]
 margin_top = 100.0
 margin_right = 367.0
 margin_bottom = 120.0
+rect_pivot_offset = Vector2( -163, -30 )
 button_mask = 3
-text = "Skin"
+text = "Skin Creator"
 script = ExtResource( 4 )
 
-[node name="QuitButton" type="Button" parent="VBoxButtons"]
+[node name="SkinSelectorButton" type="Button" parent="VBoxButtons"]
 margin_top = 150.0
 margin_right = 367.0
 margin_bottom = 170.0
+rect_pivot_offset = Vector2( -163, -30 )
+button_mask = 3
+text = "Skin Selector"
+script = ExtResource( 5 )
+
+[node name="QuitButton" type="Button" parent="VBoxButtons"]
+margin_top = 200.0
+margin_right = 367.0
+margin_bottom = 220.0
 button_mask = 3
 text = "Quit"
 script = ExtResource( 2 )
 
+[node name="Label" type="Label" parent="."]
+margin_left = 331.0
+margin_top = 94.0
+margin_right = 695.0
+margin_bottom = 201.0
+text = "Xen Project"
+align = 1
+autowrap = true
+
 [connection signal="pressed" from="VBoxButtons/PlayButton" to="VBoxButtons/PlayButton" method="_on_PlayButton_pressed"]
-[connection signal="pressed" from="VBoxButtons/SkinButton" to="VBoxButtons/SkinButton" method="_on_SkinButton_pressed"]
+[connection signal="pressed" from="VBoxButtons/SkinCreatorButton" to="VBoxButtons/SkinCreatorButton" method="_on_SkinButton_pressed"]
+[connection signal="pressed" from="VBoxButtons/SkinSelectorButton" to="VBoxButtons/SkinSelectorButton" method="_on_SkinSelectorButton_pressed"]
 [connection signal="pressed" from="VBoxButtons/QuitButton" to="VBoxButtons/QuitButton" method="_on_QuitButton_pressed"]
