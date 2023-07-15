@@ -16,20 +16,20 @@ Godot project codepen Project Xen
 ## Current Capabilities
 
   *  Main Menu:
-    *  Menu Buttons work
+     *  Menu Buttons work
 
   *  Skin Creator:
-    *  You can create a new Skin and save it as JSON file!
+     *  You can create a new Skin and save it as JSON file!
     
   *  Skin Selector:
-    *  It loads all the Skins saved as Labels with the JSON files data
+     *  It loads all the Skins saved as Labels with the JSON files data
 
 ## How to test in your pc
 
   *  Install Godot 3.5 (Not quite sure if it works with latest versions)
   *  Move to your Desktop folder or wherenever you want to run the project
   *  From shell (Linux) / powerShell (windows), execute `git init`
-  *  Then execute `git clone https://github.com/Dasaavawar/Project_Xen`
+  *  Then execute `git clone https://github.com/Imitelis/Project_Xen`
   *  Open Godot and import the project
   *  Select GLES2 in the upper right (not sure if neccesarily)
   *  Go to Editor tab, then Editor Settings and enable interface > scene tabs > restore scenes on load
